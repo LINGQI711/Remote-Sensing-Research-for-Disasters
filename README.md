@@ -10,6 +10,9 @@ Remote sensing and crisis-media data provide complementary evidence before, duri
 
 ### 2026
 
+- **DisastQA: A Comprehensive Benchmark for Evaluating Question Answering in Disaster Management** [[arXiv](https://arxiv.org/abs/2601.03670)] [[Code](https://github.com/TamuChen18/DisastQA_open)] [[Data](https://huggingface.co/datasets/tamuzc/DisastQA)]
+  - Provides 3,000 verified text-based questions (2,000 multiple-choice and 1,000 open-ended) across eight disaster types, constructed from DisastIR. Evaluates 20 models under closed-book, noisy-evidence, and oracle-evidence settings, with keypoint-based scoring for factual completeness.
+
 - **DisasterBench: A Multimodal Benchmark for UAV-Based Disaster Response in Complex Environments** [[arXiv](https://arxiv.org/abs/2606.06217)]
   - Covers 14 disaster scene types and nine response-critical tasks spanning pre-, during-, and post-disaster analysis.
 
@@ -106,13 +109,14 @@ The inventory below is based on manifests, task files, source notes, and tool im
 
 The benchmark workspace currently contains 222 task instances organized into four phases: mitigation (32), preparedness (45), response (115), and recovery (30). The manifests combine real imagery with frozen geospatial fixtures and synthetic operational tables for facilities, shelters, roads, resources, communications, and recovery monitoring.
 
-## VQA and Information-Retrieval Dataset Summary
+## QA, VQA and Information-Retrieval Dataset Summary
 
 | Resource | Modality | Scale / coverage | Disaster relevance |
 | --- | --- | --- | --- |
 | CrisisMMD | Twitter image + text | Seven 2017 disasters; roughly 18k multimodal samples | Humanitarian information, damage, needs, and infrastructure labels |
 | DisasterVQA | Social-media images + QA | 1,395 images and 4,405 expert QA pairs | Disaster-scene perception and operational reasoning |
 | DisastIR | Text queries + passages | 9,600 queries, 1.3M+ labeled pairs, 48 tasks | Disaster-management search and evidence retrieval |
+| [DisastQA](https://arxiv.org/abs/2601.03670) | Text questions + evidence | 3,000 questions (2,000 multiple-choice + 1,000 open-ended); eight disaster types | Disaster QA under clean, noisy, or absent evidence; factual completeness |
 | FloodNet-VQA | UAV image + QA | Post-flood scene understanding | Flood scene classification and visual questions |
 | HurMic-VQA / VQA-AID | UAV image + QA | Hurricane Michael damage scenes | Post-disaster damage assessment |
 | HRVQA | Aerial image + QA | 53,512 images and 1.07M QA pairs | High-resolution aerial reasoning with disaster-monitoring applications |
