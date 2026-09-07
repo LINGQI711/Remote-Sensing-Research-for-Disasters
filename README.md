@@ -262,4 +262,13 @@ These papers describe reusable methods, model architectures or inference strateg
 - **ERA5** — global atmospheric reanalysis data. [[Data](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels)]
 - **CORDEX** — regional climate model and downscaling data. [[Project](https://cordex.org/)]
 - **WRF** — numerical weather simulation framework for event-specific high-resolution meteorological data. [[Project](https://www.mmm.ucar.edu/models/wrf)]
+- **WorldPop** — high-resolution gridded population and demographic estimates for population exposure, affected-population estimation, and humanitarian planning. [[Data and project](https://www.worldpop.org/)]
+
+### Remote-Sensing and Fire-Event Fields
+
+| 数据字段 | 数据来源及用途 |
+| --- | --- |
+| `S2_B02/B03/B04/B08/B11`、`S2_SCL` | Sentinel-2 L2A 多光谱影像及地表分类，作为光学背景 |
+| `FireMask`、`MaxFRP` | MODIS MYD14A1 活跃火点与火辐射功率，作为火情证据 |
+| 隐藏的 `Burn_Date`、`QA` | MODIS MCD64A1 烧毁日期和质量标记，用于工具返回标签及真值计算 |
 
