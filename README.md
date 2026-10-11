@@ -8,11 +8,26 @@ Remote sensing and crisis-media data provide complementary evidence before, duri
 
 ## Papers
 
-Venue labels distinguish conference proceedings, Findings, workshops, journal articles, and preprints. Papers are grouped by the formal publication year when available, otherwise by the preprint year. **arXiv preprint** means no conference or journal acceptance was verified; it does not imply rejection. Venue information last checked: **2026-09-06**; GAL and DisasTeller entries checked on **2026-10-09**. Journal entries use the issue year when assigned; online-first dates and delayed workshop-proceedings dates are noted where they differ.
+Venue labels distinguish conference proceedings, Findings, workshops, journal articles, and preprints. Papers are grouped by the formal publication year when available, otherwise by the preprint year. **arXiv preprint** means no conference or journal acceptance was verified; it does not imply rejection. Venue information last checked: **2026-09-06**; GAL and DisasTeller entries checked on **2026-10-09**; DisasterInsight, MAS-LAND, the disaster-dataset survey, GRDisaster, and Recov-Vision entries checked on **2026-10-11**. Journal entries use the issue year when assigned; online-first dates and delayed workshop-proceedings dates are noted where they differ.
 
-**56 papers · 2017–2026.** [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023) · [2022](#2022) · [2021](#2021) · [2020](#2020) · [2019](#2019) · [2018](#2018) · [2017](#2017)
+**61 papers · 2017–2026.** [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023) · [2022](#2022) · [2021](#2021) · [2020](#2020) · [2019](#2019) · [2018](#2018) · [2017](#2017)
 
 ### 2026
+
+- **DisasterInsight: A Building-Centric Benchmark for Evaluating Vision-Language Models in Disaster Response** — **[ECCV 2026 Workshop · TerraBytes (presented)](https://arxiv.org/abs/2601.18493)** [[Code](https://github.com/sara2227/DisasterInsight-benchmark)]
+  - Benchmark: **DisasterInsight**. Enriches xBD building instances with OpenStreetMap functional labels and provides 134,108 instruction records across 15 task types, including building assessment, counting, multi-instance reasoning, and structured reporting. The current release provides code and prompts; benchmark instruction records are planned for a separate release. Earlier versions used the subtitle “A Multimodal Benchmark for Function-Aware and Grounded Disaster Assessment.”
+
+- **MAS-LAND: A multi-agent system for landslide detection and rapid response** — **[International Journal of Disaster Risk Reduction (IJDRR) 2026](https://doi.org/10.1016/j.ijdrr.2026.106263)**
+  - Framework: **MAS-LAND**. Combines post-event landslide segmentation, building and road exposure assessment, and automated operational reporting. Evaluated on the May 2023 Emilia–Romagna disaster using very-high-resolution orthophotos, SegFormer, RT-DETR building extraction, and OpenStreetMap roads; outputs interactive maps with landslide-specific reports.
+
+- **Survey on Disaster Management Datasets for Remote Sensing-Based Emergency Applications** — **[IEEE TGRS 2026](https://doi.org/10.1109/TGRS.2026.3692760)** [[arXiv](https://arxiv.org/abs/2605.08196)]
+  - **Survey / dataset reference.** Reviews publicly available image-based datasets supporting machine learning and remote sensing across disaster mitigation, preparedness, detection, response, and recovery. Discusses dataset accessibility, annotation quality, heterogeneous modalities, and coverage gaps; serves as a dataset-selection reference rather than introducing a new benchmark.
+
+- **Decoding the Disaster: Multi-Task Geospatial Reasoning with Vision-Language Models and Crowdsourced Imagery for Disaster Mapping** — **arXiv preprint 2026** [[arXiv](https://arxiv.org/abs/2610.00302)]
+  - Framework: **GRDisaster**. Uses a PhotoMappers-derived benchmark of 26,340 images arranged into human-validated VGI, street-view, and remote-sensing triplets spanning disaster events from 2018 to 2024. Combines cross-view geolocalization, multi-view fusion, spatial reasoning, and damage-severity assessment to interpret crowdsourced disaster imagery.
+
+- **Recov-Vision: Linking street view imagery and vision-language models for post-disaster recovery** — **[International Journal of Disaster Risk Reduction (IJDRR) 2026](https://doi.org/10.1016/j.ijdrr.2026.106388)** [[arXiv](https://arxiv.org/abs/2509.20628)] [[Code](https://github.com/YimingXiao98/RecovVision)] [[Data](https://huggingface.co/datasets/Ymx1025/FacadeTrack)]
+  - Framework: **Recov-Vision**. Links panoramic street-view video to parcels and rectifies facade views for interpretable building-occupancy and recovery assessment. Compares a rule-based decision policy with a separate LLM reasoning stage across two post-Hurricane Helene surveys. First posted as a preprint in 2025; grouped by its 2026 journal publication.
 
 - **Integration of large vision language models for efficient post-disaster damage assessment and reporting (DisasTeller)** — **[Nature Communications 2026](https://www.nature.com/articles/s41467-025-68216-z)** [[Code](https://github.com/zche3016/DisasTeller)] [[Output data](https://doi.org/10.5281/zenodo.17785783)]
   - Framework: **DisasTeller**. Coordinates multiple large vision-language model agents for post-disaster damage assessment, emergency alerts, resource allocation, recovery planning, and report generation. Evaluated using crisis imagery and flood/bushfire case studies; code and synthetic data are released by the authors.
@@ -224,6 +239,8 @@ This category focuses on evaluation suites for VLMs, LLM agents, multimodal reas
 
 | Benchmark | Evaluation focus | Paper / source |
 | --- | --- | --- |
+| **DisasterInsight** | Building function and damage assessment, counting, multi-instance reasoning and grounded reporting | [DisasterInsight (ECCV 2026 TerraBytes Workshop)](https://arxiv.org/abs/2601.18493) |
+| **GRDisaster** | Cross-view geolocalization validation, spatial reasoning and disaster damage severity | [Decoding the Disaster (arXiv 2026)](https://arxiv.org/abs/2610.00302) |
 | **DisasterBench** | Multimodal UAV disaster response across pre-, during- and post-disaster tasks | [DisasterBench (arXiv 2026)](https://arxiv.org/abs/2606.06217) |
 | **DORA** | Heterogeneous geospatial reasoning for emergency-operation agents | [Can LLM Agents Respond to Disasters? (arXiv 2026)](https://arxiv.org/abs/2605.11633) |
 | **GeoDisaster** | Orchestrated agents for operational disaster geo-intelligence | [GeoDisaster (arXiv 2026)](https://arxiv.org/abs/2606.17246) |
@@ -240,7 +257,7 @@ These papers describe reusable methods, model architectures or inference strateg
 
 | Method family | Representative methods and papers | Main role |
 | --- | --- | --- |
-| Geospatial and multimodal disaster-response agents | [Geospatial Awareness Layer (GAL)](https://arxiv.org/abs/2510.12061), [DisasTeller](https://www.nature.com/articles/s41467-025-68216-z) | Geospatially grounded resource allocation, multi-agent damage assessment, emergency alerts and reporting |
+| Geospatial and multimodal disaster-response agents | [Geospatial Awareness Layer (GAL)](https://arxiv.org/abs/2510.12061), [DisasTeller](https://www.nature.com/articles/s41467-025-68216-z), [MAS-LAND](https://doi.org/10.1016/j.ijdrr.2026.106263) | Geospatially grounded resource allocation, multi-agent damage and infrastructure-exposure assessment, emergency alerts and reporting |
 | Segmentation and change detection | [GVLM cross-domain mapping](https://doi.org/10.1016/j.isprsjprs.2023.01.018), [Guided Landslide Generator (GLG)](https://doi.org/10.1016/j.isprsjprs.2026.08.007), [DMLCDNet](https://doi.org/10.1016/j.jag.2026.105116), [Change3D](https://openaccess.thecvf.com/content/CVPR2025/papers/Zhu_Change3D_Revisiting_Change_Detection_and_Captioning_from_A_Video_Modeling_CVPR_2025_paper.pdf), [BAM-CD/FLOGA](https://doi.org/10.1109/JSTARS.2024.3381737), domain-incremental fire detection ([JAG 2023](https://www.sciencedirect.com/science/article/pii/S1569843223001012)) | Pixel segmentation, bi-temporal change, synthetic landslide generation, building damage and domain generalization |
 | Cross-view retrieval and geolocation | [Sample4Geo](https://openaccess.thecvf.com/content/ICCV2023/html/Deuser_Sample4Geo_Hard_Negative_Sampling_For_Cross-View_Geo-Localisation_ICCV_2023_paper.html), [CVDisaster-Geoloc](https://doi.org/10.1016/j.isprsjprs.2025.01.003), [StaGeo/TriGeo](https://doi.org/10.1080/13658816.2025.2524857), [ProbGLC](https://doi.org/10.1016/j.isprsjprs.2026.03.050), [SAGINGeo](https://doi.org/10.1109/JSTARS.2026.3712316) | Ground/street/overhead matching, candidate ranking, probabilistic location prediction |
 | Generative geolocation and location uncertainty | [PLONK / Around the World in 80 Timesteps](https://openaccess.thecvf.com/content/CVPR2025/html/Dufour_Around_the_World_in_80_Timesteps_A_Generative_Approach_to_CVPR_2025_paper.html), [OpenStreetView-5M](https://openaccess.thecvf.com/content/CVPR2024/papers/Astruc_OpenStreetView-5M_The_Many_Roads_to_Global_Visual_Geolocation_CVPR_2024_paper.pdf) | Generative global geolocation, density estimation and geolocation pretraining |
@@ -248,9 +265,11 @@ These papers describe reusable methods, model architectures or inference strateg
 | Retrieval and crisis-text geolocation | [IDRISI-RE](https://doi.org/10.1016/j.ipm.2023.103340), [IDRISI-RA](https://aclanthology.org/2023.acl-long.901/), [IDRISI-D](https://aclanthology.org/2023.arabicnlp-1.14/), [DisastIR](https://aclanthology.org/2025.findings-emnlp.97/) | Location mention recognition, disambiguation, multilingual retrieval and evidence discovery |
 | Wildfire temporal prediction | [FiReDiff / FireSentry](https://arxiv.org/abs/2512.03369), [TS-SatFire](https://www.nature.com/articles/s41597-025-06271-3), [FireScope](https://firescope.ai/research/) | Video prediction, active-fire/burned-area mapping and wildfire-risk forecasting |
 | Multimodal disaster classification | [MEDIC](https://doi.org/10.1007/s00521-022-07717-0), [LADI v2](https://openaccess.thecvf.com/content/CVPR2025W/EarthVision/papers/Scheele_LADI_v2_Multi-label_Dataset_and_Classifiers_for_Low-Altitude_Disaster_Imagery_CVPRW_2025_paper.pdf), [CrisisMMD](https://ojs.aaai.org/index.php/ICWSM/article/view/14983) | Multi-label image classification, humanitarian information extraction and damage assessment |
+| Crowdsourced disaster mapping and street-level recovery assessment | [GRDisaster](https://arxiv.org/abs/2610.00302), [Recov-Vision](https://doi.org/10.1016/j.ijdrr.2026.106388) | Cross-view spatial reasoning, damage severity, parcel-level occupancy and recovery monitoring |
 
 ### Cross-Category Notes
 
+- For a broader dataset-selection reference across disaster-management phases, see the [Survey on Disaster Management Datasets for Remote Sensing-Based Emergency Applications (IEEE TGRS 2026)](https://doi.org/10.1109/TGRS.2026.3692760).
 - The same work may appear in multiple categories: for example, **DisasterM3** is both a task dataset and a vision-language benchmark, while **ProbGLC** is both a cross-view dataset paper and a geolocation method.
 - **MEDIC** incorporates CrisisMMD, DMD and other source collections; these should not be added together as independent sample counts.
 - Dataset names and paper titles are not always identical: GVLM, CVIAN, MultiIAN, SAGINDisaster, D-Fire and Wildfires-CEMS are indexed through their associated papers.
