@@ -10,9 +10,12 @@ Remote sensing and crisis-media data provide complementary evidence before, duri
 
 Venue labels distinguish conference proceedings, Findings, workshops, journal articles, and preprints. Papers are grouped by the formal publication year when available, otherwise by the preprint year. **arXiv preprint** means no conference or journal acceptance was verified; it does not imply rejection. Venue information last checked: **2026-09-06**; GAL and DisasTeller entries checked on **2026-10-09**; DisasterInsight, MAS-LAND, the disaster-dataset survey, GRDisaster, and Recov-Vision entries checked on **2026-10-11**. Journal entries use the issue year when assigned; online-first dates and delayed workshop-proceedings dates are noted where they differ.
 
-**61 papers · 2017–2026.** [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023) · [2022](#2022) · [2021](#2021) · [2020](#2020) · [2019](#2019) · [2018](#2018) · [2017](#2017)
+**62 papers · 2017–2026.** [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023) · [2022](#2022) · [2021](#2021) · [2020](#2020) · [2019](#2019) · [2018](#2018) · [2017](#2017)
 
 ### 2026
+
+- **DisasterBench: Benchmarking LLM Planning under Typed Tool Interface Constraints** — **[EMNLP 2026 Findings (author-confirmed acceptance)](https://yimingxiao98.github.io/)** [[arXiv](https://arxiv.org/abs/2605.27957)] [[Code](https://github.com/TamuChen18/DisasterBench_Open)] [[Data](https://huggingface.co/datasets/tamuzc/DisasterBench)]
+  - Benchmark: **DisasterBench (typed-tool planning)**. Provides 233 expert-verified planning tasks, 26 task-interface agents, and 81 typed compatibility edges for disaster-response workflows. Evaluates tool selection, parameter binding, and dependency propagation across five planning paradigms; **First-Point-of-Failure (FPoF)** analysis identifies the earliest workflow error. Distinct from the similarly named UAV multimodal DisasterBench below. Acceptance is announced on the coauthor's publication page; entry checked on **2026-10-12**.
 
 - **DisasterInsight: A Building-Centric Benchmark for Evaluating Vision-Language Models in Disaster Response** — **[ECCV 2026 Workshop · TerraBytes (presented)](https://arxiv.org/abs/2601.18493)** [[Code](https://github.com/sara2227/DisasterInsight-benchmark)]
   - Benchmark: **DisasterInsight**. Enriches xBD building instances with OpenStreetMap functional labels and provides 134,108 instruction records across 15 task types, including building assessment, counting, multi-instance reasoning, and structured reporting. The current release provides code and prompts; benchmark instruction records are planned for a separate release. Earlier versions used the subtitle “A Multimodal Benchmark for Function-Aware and Grounded Disaster Assessment.”
@@ -241,7 +244,8 @@ This category focuses on evaluation suites for VLMs, LLM agents, multimodal reas
 | --- | --- | --- |
 | **DisasterInsight** | Building function and damage assessment, counting, multi-instance reasoning and grounded reporting | [DisasterInsight (ECCV 2026 TerraBytes Workshop)](https://arxiv.org/abs/2601.18493) |
 | **GRDisaster** | Cross-view geolocalization validation, spatial reasoning and disaster damage severity | [Decoding the Disaster (arXiv 2026)](https://arxiv.org/abs/2610.00302) |
-| **DisasterBench** | Multimodal UAV disaster response across pre-, during- and post-disaster tasks | [DisasterBench (arXiv 2026)](https://arxiv.org/abs/2606.06217) |
+| **DisasterBench (typed-tool planning)** | Executable workflow planning with typed interfaces, parameter binding, dependencies and first-failure diagnosis | [DisasterBench (EMNLP 2026 Findings; author-confirmed acceptance)](https://arxiv.org/abs/2605.27957) |
+| **DisasterBench (UAV multimodal)** | Multimodal UAV disaster response across pre-, during- and post-disaster tasks | [DisasterBench (arXiv 2026)](https://arxiv.org/abs/2606.06217) |
 | **DORA** | Heterogeneous geospatial reasoning for emergency-operation agents | [Can LLM Agents Respond to Disasters? (arXiv 2026)](https://arxiv.org/abs/2605.11633) |
 | **GeoDisaster** | Orchestrated agents for operational disaster geo-intelligence | [GeoDisaster (arXiv 2026)](https://arxiv.org/abs/2606.17246) |
 | **DisastQA** | Disaster-management question answering with clean, noisy and absent evidence | [DisastQA (ACL 2026 Findings)](https://aclanthology.org/2026.findings-acl.756/) |
