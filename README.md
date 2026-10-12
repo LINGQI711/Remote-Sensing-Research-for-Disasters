@@ -2,7 +2,7 @@
 
 Papers, models, datasets, and benchmarks for disaster monitoring, assessment, response, and recovery.
 
-**63 unique papers · 2017–2026.** Papers with multiple contributions appear in multiple sections.
+**65 unique papers · 2017–2026.** Papers with multiple contributions appear in multiple sections.
 
 ## Contents
 
@@ -115,6 +115,16 @@ Papers, models, datasets, and benchmarks for disaster monitoring, assessment, re
 - **Rapid Identification of Damaged Buildings Using Incremental Learning with Transferred Data from Historical Natural Disaster Cases** — **[ISPRS JPRS 2023](https://www.sciencedirect.com/science/article/pii/S0924271622003033)**
   - Transfers information from historical disaster cases to identify damaged buildings after a new event.
 
+### Road Damage Assessment
+
+- **A Benchmark Dataset for Spatially Aligned Road Damage Assessment in Small Uncrewed Aerial Systems Disaster Imagery** — **[AAAI 2026 · AI for Social Impact](https://ojs.aaai.org/index.php/AAAI/article/view/41248)** [[arXiv](https://arxiv.org/abs/2512.12128)] [[Code](https://github.com/CRASAR/CRASAR-U-DROIDs-RDA)] [[Data](https://huggingface.co/datasets/CRASAR/CRASAR-U-DROIDs)]
+  - Dataset: **CRASAR-U-DROIDs (roads)**. Annotates 657.25 km of roads across 10 disasters using 10 condition classes, with 9,184 alignment adjustments. Provides 18 baseline models and reports operational deployment during Hurricanes Debby and Helene.
+
+### Disaster Image Classification
+
+- **LADI v2: Multi-label Dataset and Classifiers for Low-Altitude Disaster Imagery** — **[CVPR 2025 Workshops · EarthVision](https://openaccess.thecvf.com/content/CVPR2025W/EarthVision/papers/Scheele_LADI_v2_Multi-label_Dataset_and_Classifiers_for_Low-Altitude_Disaster_Imagery_CVPRW_2025_paper.pdf)** [[Code](https://github.com/LADI-Dataset/ladi-overview)] [[Data](https://huggingface.co/datasets/MITLL/LADI-v2-dataset)] [[arXiv](https://arxiv.org/abs/2406.02780)]
+  - Dataset: **LADI v2**. Provides about 10,000 Civil Air Patrol images from over 50 disaster events in 2015–2023 across more than 30 US states and territories, annotated by trained volunteers for multi-label classification. Includes two pretrained baseline classifiers and comparisons with vision-language models.
+
 ### Social-Media Damage Assessment
 
 - **Damage Identification in Social Media Posts using Multimodal Deep Learning** — **[ISCRAM 2018](https://idl.iscram.org/files/husseinmouzannar/2018/2129_HusseinMouzannar_etal2018.pdf)**
@@ -132,6 +142,9 @@ Papers, models, datasets, and benchmarks for disaster monitoring, assessment, re
 - **BRIGHT: A Globally Distributed Multimodal Building Damage Assessment Dataset with Very-High-Resolution for All-Weather Disaster Response** — **[Earth System Science Data (ESSD) 2025](https://doi.org/10.5194/essd-17-6217-2025)** [[Code](https://github.com/ChenHongruixuan/BRIGHT)] [[Data](https://doi.org/10.5281/zenodo.14619797)]
   - Provides very-high-resolution optical and SAR imagery for building damage assessment across natural and human-made disasters.
 
+- **CRASAR-U-DROIDs: A Large Scale Benchmark Dataset for Building Alignment and Damage Assessment in Georectified sUAS Imagery** — **arXiv preprint 2024** [[arXiv](https://arxiv.org/abs/2407.17673)] [[Data](https://huggingface.co/datasets/CRASAR/CRASAR-U-DROIDs)]
+  - Dataset: **CRASAR-U-DROIDs (buildings)**. Provides 52 sUAS orthomosaics from 10 disasters covering 67.98 km², with 21,716 building polygons and damage labels plus 7,880 spatial-adjustment annotations for building alignment and damage assessment.
+
 - **RescueNet: A High Resolution UAV Semantic Segmentation Dataset for Natural Disaster Damage Assessment** — **[Scientific Data 2023](https://www.nature.com/articles/s41597-023-02799-4)** [[Code and Data](https://github.com/BinaLab/RescueNet)]
   - Supports post-hurricane semantic segmentation and damage assessment using high-resolution UAV imagery.
 
@@ -140,6 +153,11 @@ Papers, models, datasets, and benchmarks for disaster monitoring, assessment, re
 
 - **Creating xBD: A Dataset for Assessing Building Damage from Satellite Imagery** — **[CVPR 2019 Workshops](https://openaccess.thecvf.com/content_CVPRW_2019/html/cv4gc/Gupta_Creating_xBD_A_Dataset_for_Assessing_Building_Damage_from_Satellite_CVPRW_2019_paper.html)** [[Data](https://xview2.org/dataset)]
   - A large-scale pre- and post-event satellite imagery dataset for building localization and damage classification across multiple disaster types.
+
+### Road Damage & Alignment
+
+- **A Benchmark Dataset for Spatially Aligned Road Damage Assessment in Small Uncrewed Aerial Systems Disaster Imagery** — **[AAAI 2026 · AI for Social Impact](https://ojs.aaai.org/index.php/AAAI/article/view/41248)** [[arXiv](https://arxiv.org/abs/2512.12128)] [[Code](https://github.com/CRASAR/CRASAR-U-DROIDs-RDA)] [[Data](https://huggingface.co/datasets/CRASAR/CRASAR-U-DROIDs)]
+  - Dataset: **CRASAR-U-DROIDs (roads)**. Annotates 657.25 km of roads across 10 disasters using 10 condition classes, with 9,184 alignment adjustments. Provides 18 baseline models and reports operational deployment during Hurricanes Debby and Helene.
 
 ### Flood Mapping
 
@@ -222,8 +240,8 @@ Papers, models, datasets, and benchmarks for disaster monitoring, assessment, re
 
 ### Disaster Image & Social-Media Classification
 
-- **LADI v2: Multi-label Dataset and Classifiers for Low-Altitude Disaster Imagery** — **[CVPR 2025 Workshops · EarthVision](https://openaccess.thecvf.com/content/CVPR2025W/EarthVision/papers/Scheele_LADI_v2_Multi-label_Dataset_and_Classifiers_for_Low-Altitude_Disaster_Imagery_CVPRW_2025_paper.pdf)** [[Code](https://github.com/LADI-Dataset/ladi-overview)] [[Data](https://huggingface.co/datasets/MITLL/LADI-v2-dataset)]
-  - Dataset: **LADI v2**. Provides roughly 10,000 low-altitude disaster photographs annotated by trained Civil Air Patrol volunteers for multi-label classification, with baseline classifiers. The release identifies this as version 2.
+- **LADI v2: Multi-label Dataset and Classifiers for Low-Altitude Disaster Imagery** — **[CVPR 2025 Workshops · EarthVision](https://openaccess.thecvf.com/content/CVPR2025W/EarthVision/papers/Scheele_LADI_v2_Multi-label_Dataset_and_Classifiers_for_Low-Altitude_Disaster_Imagery_CVPRW_2025_paper.pdf)** [[Code](https://github.com/LADI-Dataset/ladi-overview)] [[Data](https://huggingface.co/datasets/MITLL/LADI-v2-dataset)] [[arXiv](https://arxiv.org/abs/2406.02780)]
+  - Dataset: **LADI v2**. Provides about 10,000 Civil Air Patrol images from over 50 disaster events in 2015–2023 across more than 30 US states and territories, annotated by trained volunteers for multi-label classification. Includes two pretrained baseline classifiers and comparisons with vision-language models.
 
 - **MEDIC: a multi-task learning dataset for disaster image classification** — **[Neural Computing and Applications 2023](https://doi.org/10.1007/s00521-022-07717-0)** [[arXiv](https://arxiv.org/abs/2108.12828)] [[Data](https://crisisnlp.qcri.org/medic/)]
   - Dataset: **MEDIC**. Consolidates 71,198 images for disaster type, informativeness, humanitarian category, and damage severity classification. Includes CrisisMMD and other source collections; these are overlapping resources, not disjoint datasets. Published online in 2022; journal issue year 2023.
