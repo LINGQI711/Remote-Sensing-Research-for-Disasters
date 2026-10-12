@@ -2,7 +2,7 @@
 
 Papers, models, datasets, and benchmarks for disaster monitoring, assessment, response, and recovery.
 
-**62 unique papers · 2017–2026.** Papers with multiple contributions appear in multiple sections.
+**63 unique papers · 2017–2026.** Papers with multiple contributions appear in multiple sections.
 
 ## Contents
 
@@ -312,6 +312,9 @@ Papers, models, datasets, and benchmarks for disaster monitoring, assessment, re
 
 - **Survey on Disaster Management Datasets for Remote Sensing-Based Emergency Applications** — **[IEEE TGRS 2026](https://doi.org/10.1109/TGRS.2026.3692760)** [[arXiv](https://arxiv.org/abs/2605.08196)]
   - Reviews image-based datasets for disaster mitigation, preparedness, detection, response, and recovery, covering data accessibility, annotation quality, modalities, and research gaps.
+
+- **Harnessing Large Language Models for Disaster Management: A Survey** — **[ACL 2025 Findings](https://aclanthology.org/2025.findings-acl.750/)** [[arXiv](https://arxiv.org/abs/2501.06932)]
+  - Surveys LLM applications across disaster mitigation, preparedness, response, and recovery, organizing research by disaster phase and application scenario. Summarizes public datasets, key challenges, and future research opportunities.
 
 <a id="supporting"></a>
 
