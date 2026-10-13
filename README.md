@@ -2,7 +2,7 @@
 
 Papers, models, datasets, and benchmarks for disaster monitoring, assessment, response, and recovery.
 
-**65 unique papers · 2017–2026.** Papers with multiple contributions appear in multiple sections.
+**67 unique papers · 2017–2026.** Papers with multiple contributions appear in multiple sections.
 
 ## Contents
 
@@ -35,6 +35,11 @@ Papers, models, datasets, and benchmarks for disaster monitoring, assessment, re
 
 - **Empowering LLM Agents with Geospatial Awareness: Toward Grounded Reasoning for Wildfire Response** — **[ACL 2026 Findings (author-confirmed acceptance)](https://missa7481.github.io/publications/)** [[arXiv](https://arxiv.org/abs/2510.12061)]
   - Agent framework: **Geospatial Awareness Layer (GAL)**. Retrieves and integrates infrastructure, demographic, terrain, and weather data with wildfire detections to support LLM agents' personnel and budget recommendations, using historical analogs and daily changes.
+
+### Scientific Workflow Agents
+
+- **HazardWeaver: Scientific Route Selection for Hazard Analysis Agents** — **arXiv preprint 2026** [[arXiv](https://arxiv.org/abs/2610.03591)] [[Code](https://github.com/LabRAI/HazardWeaver)]
+  - Framework: **HazardWeaver**. Combines evidence-linked scientific applicability conditions with a capability graph that checks input/output compatibility. Its agent selects and executes suitable scientific workflows for hazard analysis, revising routes as evidence and execution results change.
 
 <a id="vlm-llm"></a>
 
@@ -285,6 +290,9 @@ Papers, models, datasets, and benchmarks for disaster monitoring, assessment, re
 
 ### Multimodal Instructions & Reasoning
 
+- **Obshazard-bench: Benchmarking Multimodal Foundation Models for Real-Time Disaster Intelligence from Raw Earth Observation Streams** — **arXiv preprint 2026** [[arXiv](https://arxiv.org/abs/2608.00012)] [[Code](https://github.com/YYQ898/Obshazard-bench)] [[Data](https://huggingface.co/datasets/YYQ898/Obshazard-bench)]
+  - Benchmark: **ObsHazard-Bench**. Integrates raw satellite sounding streams, ground-station observations, disaster records, and socio-economic indicators. Provides 4,202 lifecycle-oriented VQA samples from 127 events across eight disaster categories and 28 sub-categories, evaluating early risk prediction, disaster evolution reasoning, and impact quantification.
+
 - **DisasterInsight: A Building-Centric Benchmark for Evaluating Vision-Language Models in Disaster Response** — **[ECCV 2026 Workshop · TerraBytes (presented)](https://arxiv.org/abs/2601.18493)** [[Code](https://github.com/sara2227/DisasterInsight-benchmark)]
   - Benchmark: **DisasterInsight**. Enriches xBD building instances with OpenStreetMap functional labels and provides 134,108 instruction records across 15 task types, including building assessment, counting, multi-instance reasoning, and structured reporting. The current release provides code and prompts; benchmark instruction records are planned for a separate release. Earlier versions used the subtitle “A Multimodal Benchmark for Function-Aware and Grounded Disaster Assessment.”
 
@@ -310,6 +318,11 @@ Papers, models, datasets, and benchmarks for disaster monitoring, assessment, re
 <a id="agent-benchmarks"></a>
 
 ## Agent Planning & Execution Benchmarks
+
+### Scientific Route Selection
+
+- **HazardWeaver: Scientific Route Selection for Hazard Analysis Agents** — **arXiv preprint 2026** [[arXiv](https://arxiv.org/abs/2610.03591)] [[Code](https://github.com/LabRAI/HazardWeaver)]
+  - Benchmark: **Hazard Weaver Benchmark (HWB)**. Contains 141 instances across seven single-hazard domains and four multi-hazard interaction classes. Supports multiple valid scientific routes and evaluates output correctness, route validity, and justified abstention.
 
 ### Typed-Tool Workflow Planning
 
